@@ -51,7 +51,7 @@ def register(username):
     if username not in registered_users:
         registered_users.add(username)
         games[username] = new_game()
-    return f"Username {username} successfully registered, here is the command you should paste in powershell:<p> cls; $id = \"" + username + open('powershell.txt','r').read()  + "<p> Here is the command you should paste in bash:<p>clear; stty -echo -icanon time 0 min 0; trap \"stty sane; echo -e '\nExited.'; exit\" SIGINT; id=" + username + open('bash.txt','r').read()
+    return f"Username {username} successfully registered, here is the command you should paste in powershell:<p> cls; $id = \"" + username + open('powershell.txt','r').read()  + "<p> Here is the command you should paste in bash:<p>clear; stty -echo -icanon time 0 min 0; trap \"stty sane; echo -e '\nExited.'; exit\" SIGINT; id=\"" + username + open('bash.txt','r').read()
     
 
 @app.route('/<a>') # this function acts as a tick function, as it is what is called from the powershell every few milliseconds.
@@ -457,3 +457,4 @@ def find_highest_pipe(pipes):
 #Ok i have nothing much to say, i'll just put some gen alpha slang here, cause why not:
 
 #skibidi ohio w rizz
+
