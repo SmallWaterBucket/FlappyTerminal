@@ -1,0 +1,1 @@
+"notregistered"; while true; do tput cup 0 0; read -rsn1 -t 0.05 key; if [ $? -eq 0 ]; then [[ $key == "q" || $key == "Q" ]] && break || curl -s http://flappybird.eu.pythonanywhere.com/jumped/$id; else curl -s http://flappybird.eu.pythonanywhere.com/$id; fi; done; stty sane; echo -e "\nExited."
