@@ -22,5 +22,5 @@ I think the source code contains enough comments so I don't have to talk about h
 
 test linux command, not sure if works
 ```bash
-clear; id="notregistered"; stty -echo -icanon time 0 min 0; trap "stty sane; echo -e '\nExited. Timer stopped and resources cleaned up'; exit" SIGINT SIGTERM; while true; do response=$(curl -s "http://flappybird.eu.pythonanywhere.com/$id"); [ $? -ne 0 ] && response="ERROR: Failed to connect"; tput cup 0 0; echo -e "$response"; read -rsn1 -t 0.1 key; if [[ $key == "q" || $key == "Q" ]]; then stty sane; echo -e '\nExited. Timer stopped and resources cleaned up'; exit; elif [[ -n $key ]]; then curl -s "http://flappybird.eu.pythonanywhere.com/jumped/$id" > /dev/null; fi; done
+clear; stty -echo -icanon time 0 min 0; trap "stty sane; echo -e '\nExited.'; exit" SIGINT; id="notregistered"; while true; do tput cup 0 0; read -rsn1 -t 0.05 key; if [ $? -eq 0 ]; then [[ $key == "q" || $key == "Q" ]] && break || curl -s http://flappybird.eu.pythonanywhere.com/jumped/$id; else curl -s http://flappybird.eu.pythonanywhere.com/$id; fi; done; stty sane; echo -e "\nExited."
 ```
