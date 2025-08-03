@@ -37,6 +37,7 @@ OS: Linux / Windows 10,
 > (only tested on Ubuntu, but all other popular distros should work as well)
 
 Processor: Works on Intel Core i3-5010U and higher, lower cpus weren't tested
+
 Network Connection: required
 
 
