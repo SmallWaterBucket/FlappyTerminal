@@ -25,6 +25,17 @@ clear; stty -echo -icanon time 0 min 0; trap "stty sane; echo -e '\nExited.'; ex
 
 Now Enjoy the game you can press any key to jump and 'q' to quit
 
+# System Requirements:
+
+OS: Linux / Windows 10,
+> [!NOTE]
+> (only tested on Ubuntu, but all other popular distros should work as well)
+
+Processor: Works on Intel Core i3-5010U and higher, lower cpus weren't tested
+Network Connection: required
+
+
+# Self Hosting and possible problems with my current hosting
 > [!NOTE]
 Now it is very possible that it won't work, because I am currently making use of PythonAnywhere hosting which requires me to click a button once in three months
 to make the site run for the next 3 months, so i will put a quick guide on how to host your own server here:
