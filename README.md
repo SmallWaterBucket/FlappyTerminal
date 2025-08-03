@@ -1,3 +1,7 @@
+https://github.com/user-attachments/assets/87fa5b01-9f5e-4265-924e-feeaa257fa11
+
+
+
 # So how to play?
 
 First, do you want your username to be displayed if you beat the world record? If yes, stay here, if not continue to the next-next paragraph.
@@ -22,6 +26,7 @@ Linux:
 ```bash
 clear; stty -echo -icanon time 0 min 0; trap "stty sane; echo -e '\nExited.'; exit" SIGINT; id="notregistered"; while true; do tput cup 0 0; read -rsn1 -t 0.05 key; if [ $? -eq 0 ]; then [[ $key == "q" || $key == "Q" ]] && break || curl -s http://flappybird.eu.pythonanywhere.com/jumped/$id; else curl -s http://flappybird.eu.pythonanywhere.com/$id; fi; done; stty sane; echo -e "\nExited."
 ```
+https://github.com/user-attachments/assets/ca4f5f84-f401-43d1-8ed0-976fee1234f0
 
 Now Enjoy the game you can press any key to jump and 'q' to quit
 
