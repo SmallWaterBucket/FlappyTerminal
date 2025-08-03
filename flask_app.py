@@ -10,8 +10,6 @@
 
 #to add:
 #1) some info about the game
-#2) linux support, hehe, this will be fun
-
 
 from flask import Flask, request, jsonify
 import json
@@ -457,4 +455,5 @@ def find_highest_pipe(pipes):
 #Ok i have nothing much to say, i'll just put some gen alpha slang here, cause why not:
 
 #skibidi ohio w rizz
+
 
