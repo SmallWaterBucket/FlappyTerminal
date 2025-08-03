@@ -120,9 +120,6 @@ def calculate(games,key,jumped): # this function is the main game logic, it calc
         else:
             birbvel = terminalvelocity # if the bird's velocity would have been greater than the terminal velocity, we set it to the terminal velocity, so it doesn't fall down too fast
     birby += birbvel # we add the velocity to the bird's y coordinate, so it moves up or down depending on the velocity
-    # i guess this is a place where air resistance could have been added, but as Albert Einstein once famously said:
-    # "Who the fuck cares about air resistance?"
-    # -Albert Einstein, idk when
 
 
 
@@ -194,7 +191,7 @@ def render(key): # Ohhh, this is a mess you better prepare
     # credits
 
 
-    # this is also absolute bullshit. The AI hasn't recovered yet. I guess I am stranded here alone, just me my stupid code and VSCode
+    # this is also absolute shish. The AI hasn't recovered yet. I guess I am stranded here alone, just me my stupid code and VSCode
     # so this part draws all those fancy 7 segment numbers
 
     numberlist = [] # this list will be used to store score numbers so if your score is 69 it'll store ['6','9']
@@ -233,10 +230,11 @@ def render(key): # Ohhh, this is a mess you better prepare
 
 
 #-------------------------------------------------------------------------------------
-# this line is a very cool line, it is a line to visually distunguish (English is not my first language) between the number shit
-# and the pipe shit
+# this line is a very cool line, it is a line to visually distunguish (English is not my first language) between the number stuff
+# and the pipe stuff
+    
 
-# Now let me explain what the actual fuck 'normalrendering is'. Well let me do a quick flappy bird ascii drawing
+# Now let me explain what the actual frick 'normalrendering is'. Well let me do a quick flappy bird ascii drawing
 #
 #                ####                  ####   So the lines here are indicating which parts are the same:
 #                ####                  ####   above the top parts all the rows are the same, below the bottom line it is the same
@@ -250,7 +248,7 @@ def render(key): # Ohhh, this is a mess you better prepare
 #                                      ####
 #               ######                 ####
 #----------------####------------------####-------------
-#                ####                  ####    So if we just calculate this once and put it in a varivablre we can make it faster
+#                ####                  ####    So if we just calculate this once and put it in a variable we can make it faster
 #                ####                  ####
 
 
@@ -455,5 +453,6 @@ def find_highest_pipe(pipes):
 #Ok i have nothing much to say, i'll just put some gen alpha slang here, cause why not:
 
 #skibidi ohio w rizz
+
 
 
